@@ -1,13 +1,6 @@
-# Sample Hardhat Project
+# Fund me Smart-Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project enables users to send funds to users and the owner can be able to withdraw the tokens from the contract.
 
-Try running some of the following tasks:
+### This contract was written with gas optimization in mind meaning, import of chainlink data feeds which will fetch Eth to USD data in real life, import of SafeMath from chainlink which will convert the currencies using Math function and lastly this project also used custom errors which will help avoid the repitition of error message which will consume gas.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
