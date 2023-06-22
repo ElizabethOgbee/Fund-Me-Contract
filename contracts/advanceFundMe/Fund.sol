@@ -9,7 +9,7 @@ contract GiveMeCash {
     using PriceConverter for uint256;
 
     address immutable owner;
-    uint256 constant minimumUSD = 50 * 10 ** 18;
+    uint256 constant MINIMUM_USD = 50 * 10 ** 18;
 
     mapping(address => uint256) public addressWithCash;
     address[] public funders; // STORING ALL THE ADDRESS OF THOSE GIVING ME MONEY IN AN ARRAY
